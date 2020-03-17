@@ -1,0 +1,20 @@
+<!--pages/guide/guide.wxml-->
+
+
+<view class="main">
+<button  bindtap="gotoview"  class="weui-btn" type="primary" >修改数据</button>
+</view>
+
+<view class="main">
+<button  bindtap="gotomanagerview"  class="weui-btn" type="primary" >数据图表</button>
+</view>
+
+<view class="main">
+<button  bindtap="gotowages"  class="weui-btn" type="primary" >工资查看</button>
+</view>
+
+<view class="main">
+<button bindtap="gotoexcel"  class="weui-btn" type="primary" >下载数据</button>
+</view>
+
+

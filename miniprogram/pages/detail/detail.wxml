@@ -1,0 +1,38 @@
+<form bindsubmit="formSubmit">
+  <view class="form-wrap">
+        
+    <view class="form-list" scroll-y="true">
+
+      <text class="text">1、姓名</text>
+      <input class="input" name="name" value="{{data.name}}"></input>
+
+      <text class="text" >2、工作地点</text>
+      <input class="input" name="workplace" value="{{data.workplace}}"></input>
+
+         <text class="text" >3、工作时间</text>
+      <input class="input" name="date" value="{{data.date}}"></input>
+
+       <text class="text" >4、层数（层）</text>
+      <input class="input" type="number" value="{{data.floor}}" name="floor"></input>
+
+      <text class="text" >5、单价（元/条）</text>
+      <input class="input" type="digit" name="price" value="{{data.price}}" ></input>
+
+      <text class="text" >6、当日总条数（条）</text>
+      <input class="input" type="digit" name="total" value="{{data.total}}"></input>
+
+      <text class="text" >7、当日个人收入（元）</text>
+      <input class="input" type="digit" name="income" value="{{data.income}}"  ></input>
+            <text class="text" >8、是否结算</text>
+      <input class="input"  name="isall" value="{{data.isall}}"  ></input>
+
+      <!-- <text class="text" >8、其他备注信息</text>
+      <input class="input" name="ps" value="无" placeholder="没有不填"></input>
+ -->
+
+    </view>
+<button  class="button" bindtap="deletethis">删除</button>
+    <button formType="submit" class="button">确认修改</button>
+    
+  </view>
+</form>

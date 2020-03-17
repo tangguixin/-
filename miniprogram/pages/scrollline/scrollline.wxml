@@ -1,0 +1,6 @@
+<view>{{shuzi}}</view>
+<button  bindtap="authMsg">授权金叶医生推送消息</button>
+<button bindtap="dianji">显示</button>
+<view class="body-view">
+    <switch bindchange="switchchange"/>
+</view>

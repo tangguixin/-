@@ -1,0 +1,6 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "usingComponents": {},
+  "navigationBarTitleText": "管理员登陆"
+}

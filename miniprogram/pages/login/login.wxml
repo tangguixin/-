@@ -1,0 +1,24 @@
+<!-- <form bindsubmit="formSubmit"> 
+<input type="password"  placeholder-style="color:#F76260" name="input" placeholder="请输入密码"></input>
+
+ <view> 
+  <button class="btn-area" formType="submit">登陆</button> 
+ </view> 
+</form> -->
+
+ <form bindsubmit="formSubmit"> 
+
+ <view class="weui-cell ">
+          <view class="weui-cell__hd">
+            <view class="weui-label">密码</view>
+          </view>
+          <view class="weui-cell__bd">
+     <input name="input" type="password"  class="weui-input"  placeholder="请输入密码" />
+          </view>
+        </view>
+ 
+
+<button class="weui-btn"  formType="submit" type="primary">
+                  管理员登陆
+</button>
+</form>

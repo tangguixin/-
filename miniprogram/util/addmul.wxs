@@ -1,0 +1,12 @@
+var filters = {
+  toFix: function (value) {
+    return value.toFixed(1)//此处1为保留一位小数
+  }
+}
+
+
+
+module.exports = {
+  toFix: filters.toFix,
+
+}

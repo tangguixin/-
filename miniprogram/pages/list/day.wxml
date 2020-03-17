@@ -1,0 +1,54 @@
+<wxs module="total1" src="../../util/pricetotal.wxs"></wxs>
+
+<view>
+
+
+
+<view >
+        <view>总条数:<text>{{total1.toshuliang(ncovList)}}</text>条</view>
+        <view>总工资:<text>{{total1.toprice(ncovList)}}</text>元</view>
+ 
+    
+<scroll-view bindscrolltolower="onScrolltolower" bindscrolltoupper="onScrolltoupper" scroll-y="true" style="height:300px"  >
+    
+      <block wx:if="{{ncovList.length > 0}}">
+      <view class="table">
+  <view class="tr bg-w">
+    <view class="th1">日期</view>
+    <view class="th">工地</view>
+      <view class="th">条数</view>
+      <view class="th">单价</view>
+    <view class="th ">收入</view>
+  </view>
+  <block wx:for="{{ncovList}}" wx:key="index">
+   <view>——————————————————————————————————————————————————————————————————————————————</view>
+    <view class="tr" wx:if="{{index % 2 == 0}}">
+      <view class="td1">{{item.date}}</view>
+      <view class="td">{{item.workplace}}</view>
+         <view class="td">{{item.total}}</view>
+            <view class="td">{{item.price}}</view>
+      <view class="td">{{item.income}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td1">{{item.date}}</view>
+      <view class="td">{{item.workplace}}</view>
+        <view class="td">{{item.total}}</view>
+          <view class="td">{{item.price}}</view>
+      <view class="td">{{item.income}}</view>
+    </view>
+  </block>
+</view>
+     
+      </block>
+      
+      <view class="tr bg-w">  
+         数据如有遗漏或错误，请即时反馈！
+      </view>
+
+    </scroll-view>
+</view>
+
+
+
+
+</view>

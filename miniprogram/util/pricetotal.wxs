@@ -1,0 +1,49 @@
+
+
+
+var total1 = {
+  toprice: function (list) {
+    console.log('计算时的list数据为', list)
+    // 声明一个变量接收数组列表price
+    var total = 0;
+    var i =0;
+    // 循环列表得到每个数据
+    for (i = 0; i < list.length; i++) {
+      // 判断选中计算价格
+      console.log('list[i]', list[i])
+      if (list[i].income) {
+
+        // 所有价格加起来 count_money
+        total += parseFloat(list[i].income)
+      }
+    }
+    return total.toFixed(2)
+    
+  },
+  toshuliang: function (list) {
+    console.log('计算时的list数据为', list)
+    // 声明一个变量接收数组列表price
+    var total = 0;
+    var i = 0;
+    // 循环列表得到每个数据
+    for (i = 0; i < list.length; i++) {
+      // 判断选中计算价格
+      console.log('list[i]', list[i])
+      if (list[i].total) {
+
+        // 所有价格加起来 count_money
+        total += parseInt(list[i].total)
+      }
+    }
+    return total
+
+  }
+}
+
+
+
+module.exports = {
+  toprice: total1.toprice,
+  toshuliang: total1.toshuliang,
+
+}

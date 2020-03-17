@@ -1,0 +1,50 @@
+
+@import "../../lib/weui-miniprogram/weui-wxss/dist/style/weui.wxss";
+.table {
+  border: 0px solid darkgray;
+  font-size: 12px;
+}
+.yq-m-t {
+  margin-top: 15rpx;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2rem;
+  align-items: center;
+}
+.td {
+    width:40%;
+    justify-content: center;
+    text-align: center;
+}
+.td1 {
+    width:50%;
+    justify-content: center;
+    text-align: center;
+}
+.bg-w{
+  background: snow;
+}
+
+.th {
+  width: 40%;
+  justify-content: center;
+  background: rgb(144, 216, 165);
+  color: #fff;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+}
+.th1 {
+  width: 50%;
+  justify-content: center;
+  background: rgb(144, 216, 165);
+  color: #fff;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+}
+
+

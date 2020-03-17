@@ -1,0 +1,14 @@
+/* pages/guide/guide.wxss */
+@import "../../lib/weui-miniprogram/weui-wxss/dist/style/weui.wxss";
+page{
+  height: 100%;
+}
+
+.main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;  
+  text-align: center；
+}

@@ -1,0 +1,57 @@
+<!--find.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <form bindsubmit="submit">
+
+
+        <!--开始时间选择-->
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">开始</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker mode="date" name="find_start_time" value="{{dateStart}}" start="2000-1-1" end="2118-12-31" bindchange="bindStartDateChange">
+              <view wx:if="{{dateStart != ''}}" class="weui-input">{{dateStart}}</view>
+              <view wx:else class="weui-input-null">选择搜索开始日期</view>
+            </picker>
+          </view>
+          <view class="weui-cell__ft" hover-class="button-hover" data-value="dateStart" bindtap="bindResiteInput">
+            <text class="iconfont icon-shibai input-button"></text>
+          </view>
+        </view>
+
+        <!--结束时间选择-->
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">结束</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker mode="date" name="find_end_time" value="{{dateEnd}}" start="{{dateStart}}" end="2118-12-31" bindchange="bindEndDateChange">
+              <view wx:if="{{dateEnd != ''}}" class="weui-input">{{dateEnd}}</view>
+              <view wx:else class="weui-input-null">选择搜索结束日期</view>
+            </picker>
+          </view>
+          <view class="weui-cell__ft" hover-class="button-hover" data-value="dateEnd" bindtap="bindResiteInput">
+            <text class="iconfont icon-shibai input-button"></text>
+          </view>
+        </view>
+
+
+
+        
+
+      <!-- 按钮 -->
+      <view class="weui-btn-area">
+   <button class="weui-btn weui-btn-info" formType="submit">下载数据</button>
+     
+      </view>
+
+   
+    </form>
+    <text>单次下载数据条数不超过100条！！！</text>
+
+  </view>
+      <text>请勿选择时间跨度过大！！！</text>
+</view>
+
+

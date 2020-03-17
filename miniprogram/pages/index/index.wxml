@@ -1,0 +1,68 @@
+<!--index.wxml-->
+
+
+
+<view class="page">
+
+
+
+<!--show.wxml-->
+<modal wx:if="{{hiddenmodalput1}}" title="修改姓名" confirm-text="修改" bindcancel="cancel"  bindconfirm="confirm2">
+    <input type='text' bindinput="onnameinput2" placeholder="请输入真实姓名" auto-focus/>
+</modal>
+
+<modal hidden="{{hiddenmodalput}}" title="请绑定姓名" no-cancel="true" confirm-text="绑定"  bindconfirm="confirm">
+    <input type='text' bindinput="onnameinput" placeholder="请输入真实姓名" auto-focus/>
+</modal>
+
+  <!-- 首页介绍 -->
+  
+  <view class="index-headline-text">
+  
+  <open-data class="weui-media-box__thumb" background-size="cover"   type="userAvatarUrl"></open-data>
+    <button bindtap="namechange"  class="weui-media-box__title" class="title1">欢迎你{{name}}</button>
+       
+        
+    
+         
+      
+    
+  </view>
+  <view class="we-tab__panel">
+    <!-- 电渣焊统计 -->
+    <view class="uploader">
+      <navigator url="../dianzhahanfill/dianzhahanfill" open-type="navigate" class="uploader-navigator">
+        <view class="uploader-text"> 电渣焊记录</view>
+        <image class='uploader-img' src='../../image/index-3.png'></image>
+      </navigator>
+    </view>
+
+    <!-- 个人工资记录 -->
+    <view class="uploader">
+    <!-- url="../gobackRegister/gobackRegister" -->
+      <navigator url="../total/total" open-type="navigate" class="uploader-navigator">
+        <view class="uploader-text"> 工资记录</view>
+        <image class='uploader-img' src='../../image/index-3.png'></image>
+      </navigator>
+    </view>
+
+        <!-- 个人中心 -->
+    <view class="uploader">
+      <navigator url="../test/test" open-type="navigate" class="uploader-navigator">
+        <view class="uploader-text"> 个人中心</view>
+        <image class='uploader-img' src='../../image/index-3.png'></image>
+      </navigator>
+    </view>
+    
+      <!-- 管理员 -->
+    <view class="uploader">
+      <navigator url="../login/login" open-type="navigate" class="uploader-navigator">
+        <view class="uploader-text"> 管理员</view>
+        <image class='uploader-img' src='../../image/index-3.png'></image>
+      </navigator>
+    </view>
+
+
+
+  </view>
+</view>

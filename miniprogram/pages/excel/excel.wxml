@@ -1,0 +1,3 @@
+
+<text> {{fileUrl}}</text>
+<button bindtap="copyFileUrl"  class="weui-btn" type="primary" >复制下载链接</button>

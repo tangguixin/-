@@ -1,0 +1,73 @@
+.weui-btn-primary {
+	color: #ffffff !important;
+	background-color: #1aad19 !important;
+}
+.weui-btn-primary:active {
+	color: #ffffff !important;
+	background-color: #179b16 !important;
+}
+.weui-btn-success {
+	color: #ffffff !important;
+	background-color: #009688 !important;
+}
+.weui-btn-success:active {
+	color: #fff !important;
+	background-color: #00897b !important;
+}
+.weui-btn-info {
+	color: #ffffff !important;
+	background-color: #03a9f4 !important;
+}
+.weui-btn-info:active {
+	color: #fff !important;
+	background-color: #039be5 !important;
+}
+.weui-btn-warning {
+	color: #ffffff !important;
+	background-color: #ffc107 !important;
+}
+.weui-btn-warning:active {
+	color: #ffffff !important;
+	background-color: #ffb300 !important;
+}
+.weui-btn-danger {
+	color: #ffffff !important;
+	background-color: #e51c23 !important;
+}
+.weui-btn-danger:active {
+	color: #ffffff !important;
+	background-color: #dd191b !important;
+}
+.weui-btn-none {
+	color: #ffffff !important;
+	background-color: #dcdcdc !important;
+}
+.weui-btn-none:active {
+	color: #ffffff !important;
+	background-color: #cfcfcf !important;
+}
+
+.weui-ad-area {
+	margin: 1.17647059em 15px;
+}
+
+.weui-icon-checkbox_success-info {
+  margin-left: 4.6px;
+  margin-right: 4.6px;
+  color: #03a9f4 !important;
+}
+
+.weui-input-null {
+  height: 2.58823529em;
+  min-height: 2.58823529em;
+  line-height: 2.58823529em;
+  color: #838383;
+}
+
+.weui-navbar__item.weui-bar__item_on {
+  color: #03a9f4 !important;
+}
+
+.weui-navbar__slider {
+  background-color: #03a9f4 !important;
+}

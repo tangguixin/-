@@ -1,0 +1,92 @@
+<wxs module="total1" src="../../util/pricetotal.wxs"></wxs>
+
+<view>
+<view>
+
+
+ <view class="weui-cell">
+                <view class="weui-cell__hd">
+                  <view class="weui-label" style="width:100px">日期：</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <picker name="date" mode="date" value="{{date}}" start="2020-01-01" end="2024-12-31" bindchange="bindDateChange">
+                    <view class="weui-input">{{date}}</view>
+                  </picker>
+                </view>
+           
+            </view>
+
+ <view class="weui-cell ">
+          <view class="weui-cell__hd">
+            <view class="weui-label">工地</view>
+          </view>
+          <view class="weui-cell__bd">
+     <input name="workplace"  class="weui-input" bindinput="onNoInput"  value="{{no}}"  placeholder="请输入工地名称" />
+          </view>
+        </view>
+</view>
+
+     
+    <view class="weui-cell" style="align-items: center;justify-content: center;text-align: center;">
+      <view class="yq-m-t">
+<button class="weui-btn" style="display: inline; margin-right: 60rpx" bindtap="onSearchTap" type="primary">
+                  查询
+</button>
+<button class="weui-btn"  style="display: inline; margin-left: 60rpx"  type="primary"  bindtap="onResetTap" >
+                  全部
+</button>
+    
+</view>
+</view>
+
+
+
+<view >
+       <view>共{{total}}条数据</view>
+        <view>总条数:<text>{{total1.toshuliang(ncovList)}}</text>条</view>
+        <view>总工资:<text>{{total1.toprice(ncovList)}}</text>元</view>
+ 
+    
+<scroll-view bindscrolltolower="onScrolltolower" bindscrolltoupper="onScrolltoupper" scroll-y="true" style="height:300px"  >
+    
+      <block wx:if="{{ncovList.length > 0}}">
+      <view class="table">
+  <view class="tr bg-w">
+    <view class="th1">日期</view>
+    <view class="th">工地</view>
+      <view class="th">条数</view>
+      <view class="th">单价</view>
+    <view class="th ">收入</view>
+  </view>
+  <block wx:for="{{ncovList}}" wx:key="true">
+   <view>——————————————————————————————————————————————————————————————————————————————</view>
+    <view class="tr" wx:if="{{index % 2 == 0}}">
+      <view class="td1">{{item.date}}</view>
+      <view class="td">{{item.workplace}}</view>
+         <view class="td">{{item.total}}</view>
+            <view class="td">{{item.price}}</view>
+      <view class="td">{{item.income}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td1">{{item.date}}</view>
+      <view class="td">{{item.workplace}}</view>
+        <view class="td">{{item.total}}</view>
+          <view class="td">{{item.price}}</view>
+      <view class="td">{{item.income}}</view>
+    </view>
+  </block>
+</view>
+     
+      </block>
+      
+      <view class="tr bg-w">  
+         数据如有遗漏或错误，请即时反馈！
+      </view>
+
+    </scroll-view>
+</view>
+
+
+
+
+</view>

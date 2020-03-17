@@ -1,0 +1,25 @@
+<view class="table">
+	<view class="tr bg-w">
+    	<view class="th">姓名</view>
+        <view class="th">总工资</view>
+        <view class="th">总支出</view>
+        <view class="th">总剩余</view>
+        <view class="th">备注</view>
+    </view>
+    <block wx:for="{{listDatain}}" wx:key="item.result">
+		<view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+			 <view class="td">{{item._id.name}}</view>
+		     <view class="td">{{item.result}}</view>
+		     <view class="td">-{{listDatainout[index].result}}</view>
+		     <view class="td">{{item.result-listDatainout[index].result}}</view>
+		     <view class="td border_right">无</view>
+		</view>
+        <view class="tr" wx:else>
+     		 <view class="td">{{item._id.name}}</view>
+		     <view class="td">{{item.result}}</view>
+		      <view class="td">-{{listDatainout[index].result}}</view>
+		       <view class="td">{{item.result-listDatainout[index].result}}</view>
+		     <view class="td border_right">无</view>
+        </view>
+    </block>
+</view>

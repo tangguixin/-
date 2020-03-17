@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/dianzhahanfill/dianzhahanfill",
+      "pages/register/register",
+      "pages/my/my",
+      "pages/index/index",
+      "pages/test/test",
+    "pages/total/total",
+    "pages/manager/manager",
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/excel/excel",
+    "pages/guide/guide",
+    "pages/download/download",
+    "pages/scrollline/scrollline",
+    "pages/list/day",
+
+      "pages/wagesmanager/wagesmanager"
+
+  ],
+  "tabBar": {
+    "color": "#919191",
+    "selectedColor": "#03a9f4",
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "iconPath": "image/icon-index.png",
+        "selectedIconPath": "image/icon-index-select.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/dianzhahanfill/dianzhahanfill",
+        "iconPath": "image/icon-add.png",
+        "selectedIconPath": "image/icon-add-select.png",
+        "text": "记账"
+      },
+      {
+        "pagePath": "pages/total/total",
+        "iconPath": "image/icon-search.png",
+        "selectedIconPath": "image/icon-search-select.png",
+        "text": "查询"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "image/icon-my.png",
+        "selectedIconPath": "image/icon-my-select.png",
+        "text": "我的"
+      }
+    ],
+    "position": "bottom"
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#07c160",
+    "navigationBarTitleText": "电渣焊统计",
+    "navigationBarTextStyle": "white"
+  },
+    
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

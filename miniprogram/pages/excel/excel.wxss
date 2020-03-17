@@ -1,0 +1,3 @@
+/* pages/excel/excel.wxss */
+
+@import "../../lib/weui-miniprogram/weui-wxss/dist/style/weui.wxss";
